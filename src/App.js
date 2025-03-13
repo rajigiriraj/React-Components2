@@ -30,6 +30,7 @@ import { IoIosContact } from "react-icons/io";
 import { IoCaretForwardOutline } from "react-icons/io5";
 import { ImCross } from "react-icons/im";
 import { TiTick } from "react-icons/ti";
+import { FaLocationDot } from "react-icons/fa6";
 
 
 
@@ -130,23 +131,23 @@ const ratings=[5,4,3,2,1];
 function App() {
   return (
     <div className='App'>
-        <div className="whole-container">
+        <div className="whole-container" style={{display:'flex',justifyContent:'flex-end'}}>
           <div className='container1'>
-            <Video/>
-            <Files folder_icon={<FaFolderMinus size={20}/>} title={'Files'} classname='file-component' heightmea="200px" widthmea="150px" files={files}/>
-            <Files folder_icon={<RiWallet3Fill size={20}/>} title={'New Payment Method'} classname='payment-component'  heightmea="250px" widthmea="150px" btn={<CommonButton text='Continue' width={200}/>}/>
+            <Video title={'FIND MY'} subtitle={'DaBaby'} STime={'1:21'} ETime={'-2:36'}/>
+            <Files folder_icon={<FaFolderMinus size={25}/>} title={'Files'} classname='file-component' margin='10px 0 0 60px' files={files}/>
+            <Files folder_icon={<RiWallet3Fill size={25}/>} title={'New Payment Method'} classname='payment-component'  margin='10px 0 0 30px'btn={<CommonButton text='Continue' width={240}/>}/>
           </div>
           <div className='container2'>
-            <FourComponents img={character1} h5='FIND MY WAY' p='DaBaby' icon1={<IoCaretForwardOutline size={20}/>}/>
-            <FourComponents img={alex} h5='Alex Traier' p='Friend request' classname='alex' icon2={<ImCross size={12}/>} icon3={<TiTick size={16}/>}/>
+            <FourComponents img={character1} h4='FIND MY WAY' p='DaBaby' icon1={<IoCaretForwardOutline size={24}/>}/>
+            <FourComponents img={alex} h4='Alex Traier' p='Friend request' classname='alex' icon2={<ImCross size={16}/>} icon3={<TiTick size={20}/>}/>
 
             <Mark margin={20} classname='withFollows' height='180px' width='150px' imgHeight='70px' imgWidth='70px' borderRadius='50px' margintop='20px'/>
-            <Book/>
-            <Files folder_icon={<BiSolidBell  size={20}/>} title={'Notification'} classname='notification-component'  heightmea="250px" widthmea="150px" notifications={notifications}/>
+            <Book h5={'Boring Girls'} author={'Sara Taylor'} p={'Amazing, very interesting novel by Sara Taylor.Must read for everyone!'}/>
+            <Files folder_icon={<BiSolidBell  size={25}/>} title={'Notification'} classname='notification-component'  margin='10px 0 0 75px' notifications={notifications}/>
             <Searchbar text='Search anything...'/>
           </div>
           <div className='container3'>
-            <FourComponents img={pizza} h5="Papa's" p='3.2km' classname='pizza' floatingicon1={<FaCommentDots  size={14}/>} floatingicon2={<IoIosHeartHalf size={12}/>}/>
+            <FourComponents img={pizza} h5="Papa's" p={'3.2km'} Picon={<FaLocationDot />} classname='pizza' floatingicon1={<FaCommentDots  size={16}/>} floatingicon2={<IoIosHeartHalf size={14}/>}/>
             <FourComponents img={coffee} h5='Coffee mug' p='Beautiful and durable' text={'$7.9'}/>
             <Mark height='230px' width='180px' imgHeight='180px' imgWidth='180px' borderRadius='20px' classname2='mark2'/>
             <Filter topic='Filter' title1='Price' subtitle1='$50-$125' title2='Colors' title3='Material' colors={colors} materials={materials}/>

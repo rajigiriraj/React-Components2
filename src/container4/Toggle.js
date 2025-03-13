@@ -1,12 +1,19 @@
 import React from 'react';
-import { IoToggle } from "react-icons/io5";
-import { FaToggleOff } from "react-icons/fa6";
+// import { IoToggle } from "react-icons/io5";
+// import { FaToggleOff } from "react-icons/fa6";
 
 export default function Toggle() {
   return (
-    <div className='toggle'>
-        <div><FaToggleOff color='rgb(107, 14, 228)' size={40}/></div>
-        <div><IoToggle  color='rgb(107, 14, 228)' size={40}/></div>
+    <div style={{display:'flex',margin:'20px 0 0 -150px'}}>
+        <label class="switch">
+          <input type="checkbox"></input>
+          <span class="slider round"></span>
+        </label>
+
+        <label class="switch">
+          <input type="checkbox" checked></input>
+          <span class="slider round"></span>
+        </label>
     </div>
   )
 }

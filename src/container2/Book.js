@@ -1,15 +1,15 @@
 import React from 'react';
 import book from '../assets/book.png'
 
-export default function Book() {
+export default function Book({h5,author,p}) {
   return (
     <div className='book'>
         <img src={book} alt='book'></img>
-        <div>
-            <h5>Boring Girls</h5>
-            <p>Sara Taylor</p>
+        <div style={{margin:'10px'}}>
+            <h5>{h5}</h5>
+            <p>{author}</p>
             <br></br>
-            <p>Amazing, very interesting novel by Sara Taylor.Must read for everyone!</p>
+            <p>{p}</p>
         </div>
     </div>
   )

@@ -10,11 +10,11 @@ import gpay from '../assets/gpay.png';
 
 
 
-export default function Files({display,folder_icon,title,classname,files,heightmea,widthmea,btn,notifications}) {
+export default function Files({display,folder_icon,title,classname,files,margin,btn,notifications}) {
   return (
-    <div className='files-payment' style={{ width:'200px'}}>
+    <div className='files-payment' style={{ width:'240px'}}>
       <div className='folder-icon'>{folder_icon}</div>
-      <h6>{title}</h6>
+      <h4 style={{margin:margin}}>{title}</h4>
 
       {classname==='file-component' && (
         <div className={classname} style={{display:display}}>
@@ -22,7 +22,7 @@ export default function Files({display,folder_icon,title,classname,files,heightm
         {files.map(file=>{
           return(
             <section className='file'>
-              <div className='file-img'><LiaFileSolid size={13}/></div>
+              <div className='file-img'><LiaFileSolid size={18}/></div>
               <div className='file-name'>
                 <p>{file.fileName}</p>
                 <div className='file-storage'>
@@ -39,7 +39,7 @@ export default function Files({display,folder_icon,title,classname,files,heightm
       )}
       
       {classname==='payment-component'&&(
-        <div>
+        <div style={{  marginBottom: '10px'}}>
           <div className={classname}>
             <div className='icons'>
               <span><IoIosRadioButtonOn /></span>

@@ -1,17 +1,24 @@
 import React from 'react';
 
-export default function FourComponents({img,h5,p,classname,icon1,icon2,icon3,text,floatingicon1,floatingicon2}) {
+export default function FourComponents({img,h4,p,Picon,classname,icon1,icon2,icon3,text,floatingicon1,floatingicon2}) {
   return (
     <div className='maincls'style={{position:'relative'}} >
         <div className='img-div'>
             <img src={img} alt='person'></img>
         </div>
         <div className='about'>
-            <h5>{h5}</h5>
-            <p>{p}</p>
+            <h4>{h4}</h4>
+            <p>{Picon}{p}</p>
         </div>
         <div className='icons' style={{display:'flex',marginTop:'0px',justifyContent:'space-between'}}>
-                {icon1&&(<span style={{marginLeft:'50px',color:'white',backgroundColor:'rgb(107, 14, 228)',padding:'5px',borderRadius:'20px',height:'20px'}}>{icon1}</span>)}
+                {icon1&&(<span style={{
+                    marginLeft:'70px',
+                    color:'white',
+                    backgroundColor:'rgb(107, 14, 228)',
+                    padding:'5px',
+                    borderRadius:'20px',
+                    height:'25px'
+                    }}>{icon1}</span>)}
                 {icon2&&(<span style={{
                     height:'20px',
                     width:'20px',
