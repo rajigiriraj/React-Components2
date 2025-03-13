@@ -4,8 +4,8 @@ import React from 'react';
 
 export default function Toggle() {
   return (
-    <div style={{display:'flex',margin:'20px 0 0 -150px'}}>
-        <label class="switch">
+    <div style={{display:'flex',flexDirection:'column',margin:'20px 0 0 -150px'}}>
+        <label style={{marginBottom:'10px'}} class="switch">
           <input type="checkbox"></input>
           <span class="slider round"></span>
         </label>

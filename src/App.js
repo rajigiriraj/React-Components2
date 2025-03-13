@@ -141,14 +141,14 @@ function App() {
             <FourComponents img={character1} h4='FIND MY WAY' p='DaBaby' icon1={<IoCaretForwardOutline size={24}/>}/>
             <FourComponents img={alex} h4='Alex Traier' p='Friend request' classname='alex' icon2={<ImCross size={16}/>} icon3={<TiTick size={20}/>}/>
 
-            <Mark margin={20} classname='withFollows' height='180px' width='150px' imgHeight='70px' imgWidth='70px' borderRadius='50px' margintop='20px'/>
+            <Mark margin={20} classname='withFollows' height='210px' width='170px' imgHeight='80px' imgWidth='80px' borderRadius='50px' margintop='20px'/>
             <Book h5={'Boring Girls'} author={'Sara Taylor'} p={'Amazing, very interesting novel by Sara Taylor.Must read for everyone!'}/>
             <Files folder_icon={<BiSolidBell  size={25}/>} title={'Notification'} classname='notification-component'  margin='10px 0 0 75px' notifications={notifications}/>
             <Searchbar text='Search anything...'/>
           </div>
           <div className='container3'>
-            <FourComponents img={pizza} h5="Papa's" p={'3.2km'} Picon={<FaLocationDot />} classname='pizza' floatingicon1={<FaCommentDots  size={16}/>} floatingicon2={<IoIosHeartHalf size={14}/>}/>
-            <FourComponents img={coffee} h5='Coffee mug' p='Beautiful and durable' text={'$7.9'}/>
+            <FourComponents img={pizza} h4="Papa's" p={'3.2km'} Picon={<FaLocationDot />} classname='pizza' floatingicon1={<FaCommentDots  size={16}/>} floatingicon2={<IoIosHeartHalf size={14}/>}/>
+            <FourComponents img={coffee} h4='Coffee mug' p='Beautiful and durable' text={'$7.9'}/>
             <Mark height='230px' width='180px' imgHeight='180px' imgWidth='180px' borderRadius='20px' classname2='mark2'/>
             <Filter topic='Filter' title1='Price' subtitle1='$50-$125' title2='Colors' title3='Material' colors={colors} materials={materials}/>
             <div style={{display:'flex'}}>

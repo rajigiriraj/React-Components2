@@ -221,8 +221,8 @@
 /* fourcomponents */
 
 .maincls{
-  height: 60px;
-  width: 270px;
+  height: 70px;
+  width: 290px;
   background-color: rgb(15, 15, 15);
   border-radius: 15px;
   padding: 7px;
@@ -230,8 +230,8 @@
   display: flex;
 }
 .maincls img{
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
   border-radius: 10px;
 }
 .about{
@@ -245,18 +245,19 @@
 .about p{ 
   font-size: 12px;
   color: rgb(160, 159, 159);
+  padding-top: 2px;
 }
 
 
 /* container4 */
 .container4{
-  width: 500px;
+  width: 400px;
 }
 .weather{
-  height: 100px;
-  width: 60px;
+  height: 150px;
+  width: 100px;
   background-color: rgb(15, 15, 15);
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 5px;
   color: white;
   padding-left: 30px;

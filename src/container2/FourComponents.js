@@ -27,7 +27,7 @@ export default function FourComponents({img,h4,p,Picon,classname,icon1,icon2,ico
                     color:'red',
                     padding:'5px',
                     textAlign:'center',
-                    marginLeft:'25px'
+                    marginLeft:'40px'
                     }}>{icon2}</span>)}
                 {icon3&&(<span style={{
                     height:'20px',
@@ -45,11 +45,11 @@ export default function FourComponents({img,h4,p,Picon,classname,icon1,icon2,ico
                     width:'20px',
                     borderRadius:'10px',
                     background: 'rgb(15, 15, 15)',
-                    padding:'5px',
+                    padding:'7px',
                     textAlign:'center',
                     position:'absolute',
                     marginTop:'-25px',
-                    marginLeft:'60px'
+                    marginLeft:'75px'
                     }}>{floatingicon1}</span>)}
                 {floatingicon2&&(<span style={{
                     color:'rgb(189, 14, 101)',
@@ -57,13 +57,13 @@ export default function FourComponents({img,h4,p,Picon,classname,icon1,icon2,ico
                     width:'20px',
                     borderRadius:'10px',
                     background: 'rgb(15, 15, 15)',
-                    padding:'5px',
+                    padding:'7px',
                     textAlign:'center',
                     position:'absolute',
                     marginTop:'-25px',
-                    marginLeft:'100px'
+                    marginLeft:'120px'
                     }}>{floatingicon2}</span>)}
-                {text&&(<span style={{color:'rgb(107, 14, 228)',marginLeft:'50px'}}>{text}</span>)}
+                {text&&(<span style={{color:'rgb(107, 14, 228)',marginLeft:'40px',marginTop:'10px'}}>{text}</span>)}
         </div>
         
         
