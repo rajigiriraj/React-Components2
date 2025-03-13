@@ -1,38 +1,336 @@
-.App {
+.App{
+  position: relative;
+}
+.whole-container{
+  display: flex;
+}
+.container1{
+  margin-right: 20px;
+}
+.video{
+  color: white;
+  background-color: rgb(15, 15, 15);
+  width: 150px;
+  height: 280px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.video img{
+  height:150px ;
+  width:150px;
+  border-radius: 10px;
+}
+.video h6{
+  margin: 10px 0 0 30px;
+}
+.video p{
+  margin: 0;
+  font-size: 10px;
+  color: rgb(160, 159, 159);
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.video input{
+  margin: 0;
+  height: 2px;
+  width: 150px;
+  accent-color: rgb(107, 14, 228);
+  text-align: center;
+}
+.video .time{
+  display: flex;
+  justify-content: space-between;
+}
+.icons{
+  display: flex ;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 5px;
+  /* position: relative; */
+}
+.icon{
+  color:rgb(107, 14, 228) ;
+  /* margin: 5px; */
+  font-size: 12px;
+}
+.icons .play{
+  background-color: rgb(107, 14, 228);
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  padding: 3px ;
+  align-items: center;
+  margin: -7px; 
+}
+.play span{
+  font-size: 14px;
+  margin: 0 0 0 3px; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Files-component */
+
+.files-payment{
+  margin-top: 20px;
+  color: white;
+  background-color: rgb(15, 15, 15);
+
+  border-radius: 20px;
+  padding: 10px;
+}
+.files-payment h6{
+  margin: 10px 0 0 30px;
+}
+.files-payment p{
+  margin: 0;
+  font-size: 10px;
+}
+.file-component{
+  margin: 20px 0 0 10px;
+}
+.files-payment .folder-icon{
+  text-align: center;
+  color:rgb(107, 14, 228) ;
+}
+.file{
+  display: flex;
+  margin-bottom: 15px;
+}
+.file-storage{
+  display: flex;
+}
+.file-storage input{
+  margin: 0;
+  margin-top: 5px;
+  height: 2px;
+  width: 70px;
+  accent-color: rgb(107, 14, 228);
+  text-align: center;
+ 
+}
+.file-storage input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: none;
+
+}
+.file-storage p{
+  margin-top: -5px;
+  margin-left: 10px;
+}
+.file-img{
+  border: solid 0.5px rgb(67, 66, 66);
+  border-radius: 7px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding: 3px;
+}
+.file-name{
+  margin-left: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* payment */
+.payment-component{
+  display: flex;
+  margin-top: 10px;
+}
+.payment-component .icons{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.payment-component .images{
+  display: flex;
+  flex-direction: column;
+}
+.img{
+  margin-top: 10px;
+  background-color: rgb(15, 15, 15);
+}
+
+
+/* notification */
+.notification-component{
+  margin-top: 20px;
+}
+.notification-component h6,p{
+  margin: 0;
+}
+.notify-div{
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: rgb(33, 32, 32);
+  padding: 10px;
+}
+.comments{
+  display: flex;
+  margin-top: 5px;
+}
+
+/* container3 */
+
+/* mark */
+
+.mark-container{
+  background-color: rgb(15, 15, 15);
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin: 40px 0px;
+  position: relative;
+}
+.mark-container h6,h5,p{
+  margin: 0;
+}
+.mark-container h6{
+  margin-right: 40px;
+}
+.mark-container p{
+  font-size: 10px;
+  color: rgb(160, 159, 159);
+}
+.withFollows{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.floater{
+  position: absolute;
+  top: -10px;
+  right: -7%;
+  
+}
+.floater span{
+  height: 10px;
+  width: 150px;
+  background-color: rgb(15, 15, 15);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.mark2{
+  /* position: absolute; */
+  margin-left: -70px;
+}
+
+/* fourcomponents */
+
+.maincls{
+  height: 50px;
+  width: 230px;
+  background-color: rgb(15, 15, 15);
+  border-radius: 15px;
+  padding: 5px;
+  margin: 0 20px 20px 0;
+  display: flex;
+}
+.maincls img{
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+.about{
+  margin: 10px 0 0 10px;
+}
+.about h5{
+  color: white;
+  font-size: 10px;
+}
+.about p{ 
+  font-size: 8px;
+  color: rgb(160, 159, 159);
+}
+
+
+/* container4 */
+.container4{
+  width: 500px;
+}
+.weather{
+  height: 100px;
+  width: 60px;
+  background-color: rgb(15, 15, 15);
+  border-radius: 15px;
+  padding: 5px;
+  color: white;
+  padding-left: 30px;
+}
+.weather h1,p{
+  margin: 0;
+}
+.weather p{
+  font-size: 10px;
+}
+.weather span{
+  padding-left: 10px;
+}
+
+
+/* Home */
+
+.home{
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  width: 200px;
+  background-color: rgb(15, 15, 15);
+  border-radius: 15px;
+  padding: 20px 25px 10px 25px;
+  margin-top: 0px;
+  margin-left: -90px;
+}
+.toggle{
+  margin-top: 20px;
+  margin-left: -100px;
+}
+
+/* book */
+
+.book{
+  background-color: rgb(15, 15, 15);
+  border-radius: 25px;
+  display: flex;
+  height: 100px;
+  width: 210px;
+  padding: 20px;
+  margin-top: 80px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.book img{
+  height: 100px;
+  width: 100px;
+  margin-right: 10px;
+}
+.book p{
+  font-size: 11px;
+  color: rgb(141, 139, 139);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* dress-mug */
+
+.dress-mug{
+  background-color: rgb(15, 15, 15);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+.dress-mug img{
+  border-radius: 10px;
+}
+.dress-mug .content{
+  margin-top: 10px;
+}
+.arrow{
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  background: rgb(56,41,204);
+  background: linear-gradient(90deg, rgba(56,41,204,1) 0%, rgba(128,84,238,1) 71%, rgba(172,82,255,1) 100%);
+}
+.mug{
+  display: flex;
+  justify-content: space-between;
 }
