@@ -1,11 +1,11 @@
-[ReactOp1](https://github.com/user-attachments/assets/c8e2f334-68d2-45ab-8561-9e6691ff7f71)
+![ReactOp1](https://github.com/user-attachments/assets/5b7e5609-c610-4000-97de-75024fb16e83)
 ![ReactOp2](https://github.com/user-attachments/assets/24287428-5059-49f5-ab24-4399a2047dd3)
 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts!
+## Available Scripts
 
 
 In the project directory, you can run:
