@@ -14,7 +14,7 @@ export default function Searchbar({text}) {
       color:'rgb(160, 159, 159)'}}>
         <span style={{padding:'10px'}}><IoIosSearch /></span>
         <p style={{paddingTop:'9px'}}>{text}</p>
-        <div style={{paddingLeft:'70px', paddingTop:'3px'}}><IconButton icon={<GiSettingsKnobs />} height={35} width={35} borderRadius={10}/></div>
+        <div style={{paddingLeft:'120px', paddingTop:'3px'}}><IconButton icon={<GiSettingsKnobs />} height={35} width={35} borderRadius={10}/></div>
     </div>
   )
 }

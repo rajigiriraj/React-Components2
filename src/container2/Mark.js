@@ -3,24 +3,24 @@ import mark from '../assets/mark.png';
 import { BiSolidMessageRounded } from "react-icons/bi";
 import { IoCall } from "react-icons/io5";
 
-export default function Mark({height,width,classname,imgHeight,imgWidth,borderRadius,margintop,classname2,margin}) {
+export default function Mark({height,width,classname,name,job,imgHeight,imgWidth,borderRadius,margintop,classname2,follow,following,followCount,followingCount}) {
   return (
     <div className={`${classname2}`}>
         <div className={'mark-container'} style={{height:height,width:width}}>
             <div>
                 <img src={mark} alt='Mark' style={{height:imgHeight,width:imgWidth,borderRadius:borderRadius , marginBottom:10 , marginTop:margintop}}></img>
-                <h6>Mark</h6>
-                <p>Teacher</p>
+                <h6>{name}</h6>
+                <p>{job}</p>
             </div>
             {classname==='withFollows' && (
                 <div className={classname}>
                     <div>
-                        <p>Follows</p>
-                        <h5>423</h5>
+                        <p>{follow}</p>
+                        <h5>{followCount}</h5>
                     </div>
                     <div>
-                        <p>Following</p>
-                        <h5>123</h5>
+                        <p>{following}</p>
+                        <h5>{followingCount}</h5>
                     </div>
                 </div>
             )}

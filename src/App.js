@@ -141,7 +141,7 @@ function App() {
             <FourComponents img={character1} h4='FIND MY WAY' p='DaBaby' icon1={<IoCaretForwardOutline size={24}/>}/>
             <FourComponents img={alex} h4='Alex Traier' p='Friend request' classname='alex' icon2={<ImCross size={16}/>} icon3={<TiTick size={20}/>}/>
 
-            <Mark margin={20} classname='withFollows' height='210px' width='170px' imgHeight='80px' imgWidth='80px' borderRadius='50px' margintop='20px'/>
+            <Mark margin={20} classname='withFollows' height='230px' width='185px' imgHeight='80px' imgWidth='80px' borderRadius='50px' margintop='20px' name={'Mark'} job={'Teacher'} follow={'Follows'} followCount={423} following={'Following'} followingCount={123}/>
             <Book h5={'Boring Girls'} author={'Sara Taylor'} p={'Amazing, very interesting novel by Sara Taylor.Must read for everyone!'}/>
             <Files folder_icon={<BiSolidBell  size={25}/>} title={'Notification'} classname='notification-component'  margin='10px 0 0 75px' notifications={notifications}/>
             <Searchbar text='Search anything...'/>
@@ -149,7 +149,7 @@ function App() {
           <div className='container3'>
             <FourComponents img={pizza} h4="Papa's" p={'3.2km'} Picon={<FaLocationDot />} classname='pizza' floatingicon1={<FaCommentDots  size={16}/>} floatingicon2={<IoIosHeartHalf size={14}/>}/>
             <FourComponents img={coffee} h4='Coffee mug' p='Beautiful and durable' text={'$7.9'}/>
-            <Mark height='230px' width='180px' imgHeight='180px' imgWidth='180px' borderRadius='20px' classname2='mark2'/>
+            <Mark height='260px' width='180px' imgHeight='180px' imgWidth='180px' borderRadius='20px' classname2='mark2' name={'Mark'} job={'Teacher'}/>
             <Filter topic='Filter' title1='Price' subtitle1='$50-$125' title2='Colors' title3='Material' colors={colors} materials={materials}/>
             <div style={{display:'flex'}}>
               <div style={{marginTop:'60px',marginLeft:'-30px'}}>
@@ -161,15 +161,15 @@ function App() {
 
           </div> 
           <div className='container4'>
-            <Weather/>
-            <CommonButton text={'Button text'} width={100}/>
-            <CommonButton text={'Button text'} width={200} margin={-100}/>
+            <Weather temp={'2 °'} weather={'Sunny'} date={'7'}/>
+            <CommonButton text={'Button text'} width={130}/>
+            <CommonButton text={'Button text'} width={260} margin={-150}/>
             <div style={{display:'flex'}}>
               <Toggle/>
               <Ratings title='4.4' icon={<FaStar />} text='32 reviews' ratings={ratings}/>
             </div>
             <Home/>
-            <AddCard title='Add a new card' btn={<CommonButton text={'Sav'} width='200px'/>} placeholder1='Card number...' placeholder2='Owner name' placeholder3='Exp.date' placeholder4='CVC'/>
+            <AddCard title='Add a new card' btn={<CommonButton text={'Sav'} width='220px'/>} placeholder1='Card number...' placeholder2='Owner name' placeholder3='Exp.date' placeholder4='CVC'/>
             <MugDress width='130px' img={mug} imgheight='120px' imgwidth='130px' h5='Coffee mug' h6='Summer outfits' font1clr='white' font2clr='rgb(141, 139, 139)' font1size='14px' font2size='10px' price='$7.9' btn={<IconButton icon={<BsHandbagFill />} height={35} width={35} borderRadius={10}/>}/>
           </div>
         </div>
